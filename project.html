@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Recommendation App</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/project.css">
 </head>
 
 <body>
@@ -30,17 +31,28 @@
       <input type="text" id="search-input" placeholder="Enter a book title...">
       <button type="submit">Search</button>
     </form>
-    
+
     <!-- Form for filters -->
 
-    <form id="filters-form">
+    <form id="filter-form">
       <label for="genre">Genre:</label>
       <select id="genre" title="Choose a genre filter.">
         <option value="" disabled selected>Select Genre</option>
-        <option value="fiction">Fiction</option>
-        <option value="nonfiction">Nonfiction</option>
-        <option value="mystery">Mystery</option>
-        <option value="fantasy">Fantasy</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Nonfiction">Nonfiction</option>
+        <option value="Travel">Travel</option>
+        <option value="Health & Fitness">Health & Fitness</option>
+        <option value="Computers">Computers</option>
+        <option value="Young Adult">Young Adult</option>
+        <option value="Philosophy">Philosophy</option>
+        <option value="Medical">Medical</option>
+        <option value="Music">Music</option>
+        <option value="Juvenile">Juvenile</option>
+        <option value="Games & Activities">Games & Activities</option>
+
+
+
+
         <!-- Add more genres as needed -->
       </select>
 
@@ -53,22 +65,18 @@
         <option value="2">2 stars</option>
         <option value="1">1 star</option>
       </select>
-
-      <input type="submit" value="Apply Filters">
+      <button type="submit">Apply Filters</button>
+      <button id="clean-filters">Clean Filters</button>
     </form>
 
-    <div id="search-results">
-      <!-- Book search results will be displayed here -->
-    </div>
-
-    <div id="recommendations">
+    <div id="books">
       <!-- Recommended books will be displayed here -->
     </div>
   </main>
 
 
   <footer>
-    &copy;<span id="year"></span> | Week 05 - Fetching Temple Data | CSE 121b
+    &copy;<span id="year"></span> | PROJECT | CSE 121b
   </footer>
   <script src="scripts/main.js"></script>
   <script>
